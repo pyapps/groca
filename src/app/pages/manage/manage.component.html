@@ -1,0 +1,9 @@
+<p>manage works!</p>
+
+<select>
+    <option *ngFor="let cat of uniqueCategories">{{cat.category}}</option>
+</select>
+
+<ul *ngFor="let item of groceryList|prop:'bath'">
+    <li>{{item.name}}</li>
+</ul>
